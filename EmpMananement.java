@@ -119,7 +119,9 @@ public class EmpMananement {
 								break;
 						}
 				}
-				
+				con.close();
+				break;
+							
 			case 3:
 				PreparedStatement ps2=con.prepareStatement("Delete from Empl where id=?");
 				System.out.println("Enter the Employee id for delet the record");
